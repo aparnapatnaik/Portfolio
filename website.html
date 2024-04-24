@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+</head>
+<style>
+
+*{
+    font-family:  sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+
+    background-color: white ;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+.header{
+
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    padding: 10px 5%;
+    background: plum;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+}
+
+.logo{
+    font-size: 25px;
+    color: black ;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+
+.navbar a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: black;
+
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding: 0 10%;
+   
+
+}
+.home-content {
+    max-width: 600px;
+    
+}
+.home-content h1{
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+
+
+
+}
+
+.home-content h3{
+    font-size: 32px;
+    font-weight: 700;
+    color: palevioletred
+}
+
+.home-content p{
+    font-size: 16px;
+    margin: 20px 0 40px;
+
+
+
+}
+.home-content .btn-box{
+    width: 345px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.btn-box a{
+    width: 150px;
+    height 100%;
+    background: palevioletred;
+    border: 2px solid palevioletred;
+    border-radius: 8px;
+    display: inline-flex;
+    font-size: 19px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: .3s;
+
+}
+
+.btn-box a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left:  0;
+    width: 0;
+    height: 100%;
+    background: lightcoral;
+    z-index: -1;
+    transition: .3s;
+
+}
+
+.btn-box a:hover{
+    color: white;
+}
+
+
+.btn-box a:hover::before{
+
+    width: 100%;
+}
+
+
+.home-sci {
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    justify-content: space-between;
+    display: flex;
+   
+    
+}
+
+
+.home-sci a{
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid lightcoral;
+    border-radius: 50%;
+    font-size: 20px;
+    color: lightcoral;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    overflow: hidden;
+    transition: .3s;
+    position: relative;
+}
+.home-sci a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background:lightblue;
+    z-index: -1;
+    transition: .3s;
+
+
+}
+.home-sci a:hover{
+
+    color:lightblue;
+}
+.home-sci a:hover::before{
+
+    width: 100%;
+    
+}
+
+.home-imgHover{
+    position: absolute;
+    top: 0;
+    left: 750px;
+    width: 500px;
+    height: 100%;
+    background-color: transparent;
+    
+    
+
+
+}
+
+.home-imgHover:hover{
+
+    background: white;
+    opacity: .8;
+}
+
+.home-imgHover img {
+        width: 650px; 
+        height: auto; 
+    }
+
+
+.fade-in-item {
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+}
+
+.fade-in-item:nth-child(1) {
+    animation-delay: 0.5s;
+}
+
+.fade-in-item:nth-child(2) {
+    animation-delay: 1s;
+}
+
+.fade-in-item:nth-child(3) {
+    animation-delay: 1.5s;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
+</style>
+<body>
+    <header class = "header">
+        <a href="#" class="logo" href="website.css">Aparna</a>
+
+        <nav class="navbar">
+            <a href="#" class = "active" >Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Portfolio</a>
+        </nav>
+    </header>
+    <section class="home">
+        <div class="home-content">
+            <h1>Hi, I am Aparna</h1>
+            <h3>Student of Xim university</h3>
+            <p>Aparna Patnaik, currently pursuing a Bachelor's in Computer Science Engineering at XIM University as part of the 2022-2026 batch, is poised to make waves in the tech industry. With a passion for innovation and a drive for excellence, Aparna is actively shaping her future in the world of technology. You can connect with her on LinkedIn and Twitter to stay updated on her journey and insights into the ever-evolving realm of CSE.</p>
+        <div class="btn-box">
+            <a href="#">contact me</a>
+        </div>
+        </div>
+        
+    <div class="home-sci">
+    <a href="#"><img src="bxl-github.svg" alt="GitHub"></a>
+    <a href="#"><img src="bxl-linkedin-square.svg" alt="LinkedIn"></a>
+    <a href="#"><img src="bxl-twitter.svg" alt="Twitter"></a>
+</div>
+
+<span class="home-imgHover">
+    <img src="ap-removebg-preview (1).jpg" alt="A beautiful landscape">
+</span>
+
+
+
+    </section>
+</body>
+</html>
